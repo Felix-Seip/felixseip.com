@@ -1,0 +1,9 @@
+.more-button {
+  width: 47px;
+  height: 47px;
+
+  background: #f05d5e;
+  border-radius: 10px;
+
+  cursor: pointer;
+}
