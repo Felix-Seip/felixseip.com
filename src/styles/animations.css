@@ -1,0 +1,35 @@
+.slide-right { 
+    position: absolute;
+    right: 100%;
+    top: 0px;
+    -webkit-animation: slideRight 2s normal forwards ease-in-out;
+    animation: slideRight 2s normal forwards ease-in-out;
+}
+
+@-webkit-keyframes slideRight {
+    from {right: 100%;}
+    to {right: -12%;}
+}
+
+@keyframes slideRight {
+    from {right: 100%;}
+    to {right: -12%;}
+}
+
+.slide-left { 
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    -webkit-animation: slideLeft 2s normal forwards ease-in-out;
+    animation: slideLeft 2s normal forwards ease-in-out;
+}
+
+@-webkit-keyframes slideLeft {
+    from {left: 100%;}
+    to {left: 0%;}
+}
+
+@keyframes slideLeft {
+    from {left: 100%;}
+    to {left: 0%;}
+}

@@ -26,6 +26,20 @@
   color: #1F2421;
 }
 
+.site-header {
+  width: 1090px;
+  height: 105px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 36px;
+  text-align: center;
+
+  color: #1F2421;
+}
+
 .info-text {
   width: 390px;
   height: 130px;
@@ -52,4 +66,15 @@
   text-align: center;
 
   color: #1F2421;
+}
+
+.button-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 24px;
+  text-align: center;
+
+  color: #FFFFFF;
 }

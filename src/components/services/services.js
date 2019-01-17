@@ -27,7 +27,15 @@ export default class Services extends React.Component {
     ];
 
     return (
-      <Grid fluid style={{ backgroundColor: "#68A691", padding: 30, marginTop: 20 }}>
+      <Grid
+        fluid
+        style={{
+          backgroundColor: "#68A691",
+          padding: 30,
+          marginTop: 20,
+          position: "relative"
+        }}
+      >
         <Row center="xs sm md lg">{services}</Row>
         <MoreButton />
       </Grid>

@@ -32,7 +32,7 @@ export default class Skills extends React.Component {
     ];
 
     return (
-      <Grid fluid style={{ padding: 30 }}>
+      <Grid fluid style={{ padding: 30, position: "relative" }}>
         <Row center="xs sm md lg">{services}</Row>
         <MoreButton />
       </Grid>

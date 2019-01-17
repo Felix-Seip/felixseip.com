@@ -2,7 +2,10 @@ import React from "react";
 
 import { Extend, Unextend } from "../../assets/icons";
 
+import { Grid, Row, Col } from "react-flexbox-grid";
+
 import "../../styles/buttons.css";
+import "../../styles/text.css";
 
 export class MoreButton extends React.Component {
   constructor(props) {
@@ -16,7 +19,7 @@ export class MoreButton extends React.Component {
 
   onButtonClick(e) {
     console.log("clicked");
-    if ((this.state.iconState == 0)) {
+    if (this.state.iconState == 0) {
       this.setState({
         icon: <Unextend iconWidth={50} iconHeight={50} />,
         iconState: 1
@@ -34,6 +37,24 @@ export class MoreButton extends React.Component {
       <div className="more-button" onClick={this.onButtonClick}>
         {this.state.icon}
       </div>
+    );
+  }
+}
+
+export class PortfolioButton extends React.Component {
+  onButtonClick(e) {
+    console.log("clicked");
+  }
+
+  render() {
+    return (
+      <Row
+        center="xs sm md lg"
+        className="portfolio-button"
+        onClick={this.onButtonClick}
+      >
+        <p className="button-text">View Portfolio</p>
+      </Row>
     );
   }
 }
