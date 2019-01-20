@@ -14,7 +14,7 @@ import "../styles/animations.css";
 export const Welcome = () => (
   <Grid
     fluid
-    style={{ position: "relative", marginBottom: "10%" }}
+    style={{ position: "relative", marginBottom: "10%", marginTop: "5%" }}
     center="xs sm md lg"
   >
     <Row center="xs sm md lg">
@@ -22,7 +22,7 @@ export const Welcome = () => (
         Freelance Mobile App Designer & Developer based in Frankfurt, Germany
       </p>
     </Row>
-    <Row style={{ marginTop: "2%" }} center="xs sm md lg">
+    <Row center="xs sm md lg">
       <Col style={{ overflow: "hidden" }}>
         <img
           src={iPad}
