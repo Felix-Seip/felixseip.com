@@ -10,7 +10,7 @@
 
 # production
 /build
-api/target
+/api/target
 
 # misc
 .DS_Store
