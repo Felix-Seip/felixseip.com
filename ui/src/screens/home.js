@@ -9,6 +9,7 @@ import { Welcome } from "../components/welcome";
 import Services from "../components/services/services";
 import Skills from "../components/skills/skills";
 import Portfolio from "../components/portfolio/portfolio";
+import Contact from "../components/contact/contact";
 
 const styles = {
   root: {
@@ -57,7 +58,8 @@ export default class HomeScreen extends React.Component {
         <Welcome />
         <Services />
         <Skills />
-        <Portfolio/>
+        <Portfolio />
+        <Contact />
       </div>
     );
   }

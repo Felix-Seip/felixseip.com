@@ -31,7 +31,7 @@ export default class Portfolio extends React.Component {
         ];
 
         return (
-            <Grid fluid style={{ backgroundColor: "#1F2421", padding: 30, position: "relative" }}>
+            <Grid fluid style={{ backgroundColor: "#1F2421", padding: 50, position: "relative" }}>
                 <Row center="xs sm md lg">{portfolio}</Row>
                 <MoreButton />
             </Grid>
