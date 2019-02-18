@@ -8,6 +8,7 @@ import Button from "@material-ui/core/Button";
 import { Welcome } from "../components/welcome";
 import Services from "../components/services/services";
 import Skills from "../components/skills/skills";
+import Portfolio from "../components/portfolio/portfolio";
 
 const styles = {
   root: {
@@ -56,6 +57,7 @@ export default class HomeScreen extends React.Component {
         <Welcome />
         <Services />
         <Skills />
+        <Portfolio/>
       </div>
     );
   }
