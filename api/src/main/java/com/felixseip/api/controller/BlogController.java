@@ -21,21 +21,6 @@ public class BlogController {
         return repository.getAllBlogs();
     }
 
-    @GetMapping("/status/{published}")
-    public List<Blog> getBlogsByPublishingStatus(@PathVariable("published") final boolean published) {
-        return repository.filterByPublishedStatus(published);
-    }
-
-    @PostMapping("")
-    public void createBlog(@RequestBody final Blog blog) {
-        repository.save(blog);
-    }
-
-    @PutMapping("")
-    public void updateBlog(@RequestBody final Blog blog) {
-        repository.save(blog);
-    }
-
     @GetMapping("/count")
     public int getBlogCount() {
         return repository.getAllBlogs().size();
@@ -44,6 +29,11 @@ public class BlogController {
     @GetMapping("/{order}")
     public void getBlogsByDate(@PathVariable("order") final String order) {
 
+    }
+
+    @GetMapping("/status/{published}")
+    public List<Blog> getBlogsByPublishingStatus(@PathVariable("published") final boolean published) {
+        return repository.filterByPublishedStatus(published);
     }
 
     //Filter the blogs by a range of dates. If no end date is specified, then filter until now
@@ -56,6 +46,16 @@ public class BlogController {
         }
 
         return repository.filterByDate(from, to);
+    }
+
+    @PostMapping("")
+    public void createBlog(@RequestBody final Blog blog) {
+        repository.save(blog);
+    }
+
+    @PutMapping("")
+    public void updateBlog(@RequestBody final Blog blog) {
+        repository.save(blog);
     }
 
     @DeleteMapping("/{blogID}")
