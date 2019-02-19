@@ -1,15 +1,22 @@
-package controller;
+package com.felixseip.api.controller;
 
-import model.Blog;
+import com.felixseip.api.model.Blog;
+import com.felixseip.api.repository.BlogRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/blogs")
 public class BlogController {
 
+    @Autowired
+    BlogRepository repository;
+
     @GetMapping("")
-    public String getBlogs(){
-        return "Hello World!";
+    public List<Blog> getBlogs(){
+        return repository.findByTitle("sdf");
     }
 
     @GetMapping("/count")
