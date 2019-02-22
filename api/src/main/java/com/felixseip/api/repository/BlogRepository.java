@@ -13,6 +13,9 @@ public interface BlogRepository extends CrudRepository<Blog, Long> {
     @Query("SELECT b FROM Blog b")
     List<Blog> getAllBlogs();
 
+    @Query("SELECT b FROM Blog b WHERE b.id = :blogId")
+    Blog findById(long blogId);
+
     @Query("SELECT b.title FROM Blog b")
     List<Blog> getAllBlogTitles();
 

@@ -11,8 +11,11 @@ import java.util.Date;
 @Table(name = "blogs")
 public class Blog implements Serializable {
 
+    private static final long serialVersionUID = 1699111863429864247L;
+
     @Id
     @Column(name = "id", nullable = false, updatable = false)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
     @Column(name = "cover_img")
@@ -31,12 +34,17 @@ public class Blog implements Serializable {
     @Column(name = "published")
     private boolean published;
 
-    public Blog(){}
+    public Blog() {
+    }
 
     public Blog(String title, String body, Date publishingDate, boolean published) {
         this.title = title;
         this.body = body;
         this.publishingDate = publishingDate;
         this.published = published;
+    }
+
+    public long getBlogId() {
+        return this.id;
     }
 }
