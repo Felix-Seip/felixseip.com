@@ -15,7 +15,7 @@ public class Blog implements Serializable {
 
     @Id
     @Column(name = "id", nullable = false, updatable = false)
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @Column(name = "cover_img")
