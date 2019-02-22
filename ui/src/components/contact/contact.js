@@ -15,7 +15,7 @@ export default class Contact extends React.Component {
 
         return (
             <div>
-                <Grid fluid style={{ backgroundColor: "#FFFFFF", position: "relative" }}>
+                <Grid fluid style={{ backgroundColor: "#1F2421", position: "relative" }}>
                     <Row center="xs sm md lg">
                         <img style={{ borderRadius: "100%", margin: "5%" }} src={Profile}></img>
                     </Row>

@@ -9,6 +9,7 @@ import { Welcome } from "../components/welcome";
 import Services from "../components/services/services";
 import Skills from "../components/skills/skills";
 import Portfolio from "../components/portfolio/portfolio";
+import Blogs from "../components/blogs/blogs";
 import Contact from "../components/contact/contact";
 
 const styles = {
@@ -59,6 +60,7 @@ export default class HomeScreen extends React.Component {
         <Services />
         <Skills />
         <Portfolio />
+        <Blogs />
         <Contact />
       </div>
     );
